@@ -1,0 +1,23 @@
+.container {
+    width: 300px;
+    height : 150px;
+    border: 2px solid #dc143c;
+    /* margin: 50px 70px 100px 120px; 
+    margin-top : 50px;
+    margin-left: 90px;
+    margin-right: 120px;
+    margin-bottom: 150px; */
+    margin : 20px;
+    /* padding espaçamento interno */
+    padding : 20px; 
+    /* Quando usar o padding aplicar o box-sizing */
+    box-sizing: border-box;
+    border-radius: 7px;
+    
+} 
+
+.bg-red {background-color: rgb(167, 55, 55); border-style: dotted; border-color: black;}
+
+.bg-green {background-color: rgb(79, 141, 79);}
+
+.bg-blue {background-color: rgb(89, 89, 231);}
