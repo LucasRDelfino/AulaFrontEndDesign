@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;/* largura */
+    height: 100vh;/* altura , vh = viwe port , tamanho da página sem rolagem*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.bg-image-1 {
+    background-image: linear-gradient(to top ,rgba(0,0,0,.7),rgba(0,0,0,.3)),
+    url(../images/pexels-alleksana-4186555.jpg);
+}
+
+.bg-image-2 {
+    background-image:linear-gradient(to top ,rgba(0,0,0,.8),rgba(0,0,0,.3)) ,
+    url(../images/pexels-siegfried-poepperl-7600177.jpg);
+}
+
+.bg-dark {
+    background-color: #000;
+}
+
