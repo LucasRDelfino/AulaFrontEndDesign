@@ -1,0 +1,18 @@
+.hero{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.hero-tittle {
+    font-size: 6vmax;
+    color : rgb(39, 1, 41);
+}
+
+
+.hero-txt {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+

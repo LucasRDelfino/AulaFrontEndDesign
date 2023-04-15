@@ -2,29 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,ol {
+    list-style: none;
+}
 
 .container {
     width: 100%;/* largura */
     height: 100vh;/* altura , vh = viwe port , tamanho da página sem rolagem*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
    
 }
 
 .bg-image-1 {
-    background-image: linear-gradient(to top ,rgba(0,0,0,.7),rgba(0,0,0,.3)),
+    background-image: linear-gradient(to top ,rgba(0,0,0,.7),rgba(0,0,0,.1)),
     url(../images/pexels-alleksana-4186555.jpg);
 }
 
 .bg-image-2 {
-    background-image:linear-gradient(to top ,rgba(0,0,0,.8),rgba(0,0,0,.3)) ,
+    background-image:linear-gradient(to top ,rgba(0,0,0,.8),rgba(0,0,0,.1)) ,
     url(../images/pexels-siegfried-poepperl-7600177.jpg);
 }
 
 .bg-dark {
     background-color: #000;
+}
+
+.btn {
+    border :3px solid rgb(39, 1, 41);
+    background-color: rgb(39, 1, 41);
+    padding: 8px 30px;
+    border-radius: 70px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: .5;
+}
+.btn:hover {
+    background-color: transparent;
 }
 
