@@ -7,16 +7,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    position: absolute;
+    position: fixed;
     top : 0;
-    left: 0%;
+    left: 0;
 }
 .header-menu ul {
     display: flex;
     gap: 20px;
 }
 .header-page a {
-    color : #000;
+    color : #fff;
    
 }
 
+.header-page h1 {
+    color: #fff;
+}

@@ -34,12 +34,12 @@ ul,ol {
 
 .bg-image-1 {
     background-image: linear-gradient(to top ,rgba(0,0,0,.7),rgba(0,0,0,.1)),
-    url(../images/pexels-alleksana-4186555.jpg);
+    url(../images/banner1.jpg);
 }
 
 .bg-image-2 {
     background-image:linear-gradient(to top ,rgba(0,0,0,.8),rgba(0,0,0,.1)) ,
-    url(../images/pexels-siegfried-poepperl-7600177.jpg);
+    url(../images/banner2.jpg);
 }
 
 .bg-dark {
@@ -47,15 +47,19 @@ ul,ol {
 }
 
 .btn {
-    border :3px solid rgb(39, 1, 41);
-    background-color: rgb(39, 1, 41);
-    padding: 8px 30px;
+    border :3px solid rgb(93, 9,97);
+    background-color: rgb(93, 9,97);
+    padding: 4px 15px;
     border-radius: 70px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     transition: .5;
 }
 .btn:hover {
     background-color: transparent;
+}
+
+.active-scroll {
+    background-color: rgb(93, 9,97,0.705);
 }
 
