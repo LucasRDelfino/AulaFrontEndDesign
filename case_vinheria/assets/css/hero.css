@@ -11,8 +11,18 @@
 
 .hero-txt {
     width: 50%;
-    margin: auto;
+    margin: auto;   
     margin-bottom: 30px;
 }
 
+.arrow {
+    position: relative;
+    top : 2px;
+    left : 4px;
+    
+}
+
+.btn:hover .arrow{
+    animation: arrow .5s infinite;
+}
 

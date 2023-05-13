@@ -47,9 +47,9 @@ ul,ol {
 }
 
 .btn {
-    border :3px solid rgb(93, 9,97);
+    border :5px solid rgb(93, 9,97);
     background-color: rgb(93, 9,97);
-    padding: 4px 15px;
+    padding: 8px 30px;
     border-radius: 70px;
     font-weight: 400;
     font-size: 20px;
@@ -62,4 +62,6 @@ ul,ol {
 .active-scroll {
     background-color: rgb(93, 9,97,0.705);
 }
+
+
 
