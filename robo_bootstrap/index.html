@@ -1,203 +1,392 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Aula 03 - Menu + CSS</title>
+    <title>Aula 05 - Formulários</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ícone na aba Navegador -->
-    <link rel="shortcut icon" href="./images/robot.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/robot.svg" type="image/x-icon" />
 
     <!-- BS Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
 
     <!-- Chamada CSS BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
 
     <!-- Chamada da minha CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-
-</head>
-
-<body>
-
+  <body>
     <header class="container mt-4">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand logo-menu" href="#">
+            <i class="bi bi-robot me-2"></i>Robots
+          </a>
 
-                <a class="navbar-brand logo-menu" href="#">
-                    <i class="bi bi-robot me-2"></i>Robots
-                </a>
+          <button
+            class="navbar-toggler"
+            id="btn-menu"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-text-right"></i>
+          </button>
 
-                <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="bi bi-text-right"></i>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="container my-4">
-        <section class="row p-4 d-flex align-items-center">
-            <div class="col-md-6">
-                <h1 class="display-1 text-blue">1ESR</h1>
-                <p class="my-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, veritatis laborum.
-                    <strong class="text-pink">
-                        Placeat
-                        repellendus tenetur rerum, aliquid quasi</strong> numquam soluta? Quo esse pariatur perferendis
-                    odio et!
-                </p>
-                <a href="" class="btn btn-outline-primary">Mais informações <i class="bi bi-arrow-down-circle"></i></a>
-            </div>
+      <section class="row p-4 d-flex align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-1 text-blue">1ESR</h1>
+          <p class="my-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
+            veritatis laborum.
+            <strong class="text-pink">
+              Placeat repellendus tenetur rerum, aliquid quasi</strong
+            >
+            numquam soluta? Quo esse pariatur perferendis odio et!
+          </p>
+          <a href="" class="btn btn-outline-primary"
+            >Mais informações <i class="bi bi-arrow-down-circle"></i
+          ></a>
+        </div>
 
-            <div class="col-md-6">
-                <img src="./images/chat-bot-animate.svg" alt="Imagem de um chatbot" class="img-fluid">
-            </div>
-        </section>
+        <div class="col-md-6">
+          <img
+            src="./images/chat-bot-animate.svg"
+            alt="Imagem de um chatbot"
+            class="img-fluid"
+          />
+        </div>
+      </section>
     </main>
 
-    <section class="container-fluid my-4 height-50 bg-pink text-light text-center d-flex align-items-center">
-
-        <h4 class="w-75 m-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas amet ab eos voluptatibus illo vitae in
-            assumenda laudantium! Beatae, repudiandae cum harum esse blanditiis nulla!
-        </h4>
-
+    <section
+      class="container-fluid my-4 height-50 bg-pink text-light text-center d-flex align-items-center"
+    >
+      <h4 class="w-75 m-auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas amet ab
+        eos voluptatibus illo vitae in assumenda laudantium! Beatae, repudiandae
+        cum harum esse blanditiis nulla!
+      </h4>
     </section>
 
     <!-- cards -->
     <section class="container">
-        <h1 class="text-blue mb-3">Melhores Robôs</h1>
+      <h2 class="text-blue mb-3">Melhores Robôs</h2>
 
-        <!-- iniciar o grid -->
-        <div class="row">
-            <!-- 1o.card -->
-            <div class="col-md-6 col-lg-3 my-2">
-                <div class="card">
-                    <img src="./images/cards/pexels-alex-knight-2599244.jpg" class="card-img-top"
-                        alt="Imagem do Robô ABCD">
-                    <div class="card-body">
-                        <h5 class="card-title">Robô A</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, velit hic.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
-                    </div>
-                </div>
+      <!-- iniciar o grid -->
+      <div class="row">
+        <!-- 1o.card -->
+        <div class="col-md-6 col-lg-3 my-2">
+          <div class="card">
+            <img
+              src="./images/cards/pexels-alex-knight-2599244.jpg"
+              class="card-img-top"
+              alt="Imagem do Robô ABCD"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Robô ABCD</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Explicabo, possimus magni.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
             </div>
-
-            <!-- 2o.card -->
-            <div class="col-md-6 col-lg-3 my-2">
-                <div class="card">
-                    <img src="./images/cards/pexels-kindel-media-8566473.jpg" class="card-img-top"
-                        alt="Imagem do Robô B">
-                    <div class="card-body">
-                        <h5 class="card-title">Robô B</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, velit
-                            hic.</p>
-                        <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
-                    </div>
-                </div>
-            </div>
-            <!-- 3o.card -->
-            <div class="col-md-6 col-lg-3 my-2">
-                <div class="card">
-                    <img src="./images/cards/pexels-pavel-danilyuk-8294554.jpg" class="card-img-top"
-                        alt="Imagem do Robô C">
-                    <div class="card-body">
-                        <h5 class="card-title">Robô C</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                            velit
-                            hic.</p>
-                        <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
-                    </div>
-                </div>
-            </div>
-            <!-- 4o.card -->
-            <div class="col-md-6 col-lg-3 my-2">
-                <div class="card">
-                    <img src="./images/cards/pexels-mason-mccall-12733045.jpg" class="card-img-top"
-                        alt="Imagem do Robô D">
-                    <div class="card-body">
-                        <h5 class="card-title">Robô D</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                            velit
-                            hic.</p>
-                        <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- 2o.card -->
+        <div class="col-md-6 col-lg-3 my-2">
+          <div class="card">
+            <img
+              src="./images/cards/pexels-lj-2085831.jpg"
+              class="card-img-top"
+              alt="Imagem do Robô R2D2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Robô R2D2</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Explicabo, possimus magni.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3o.card -->
+        <div class="col-md-6 col-lg-3 my-2">
+          <div class="card">
+            <img
+              src="./images/cards/pexels-lj-2085832.jpg"
+              class="card-img-top"
+              alt="Imagem do Robô R2D2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Robô R2D2</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Explicabo, possimus magni.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4o.card -->
+        <div class="col-md-6 col-lg-3 my-2">
+          <div class="card">
+            <img
+              src="./images/cards/pexels-pavel-danilyuk-8294625.jpg"
+              class="card-img-top"
+              alt="Imagem do Robô XPTO"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Robô XPTO</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Explicabo, possimus magni.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-    <!-- galeria imagens -->
+    <!-- galeria de imagens -->
     <section class="container my-4">
-        <h2 class="text-blue">Galeria de Imagens</h2>
+      <h2 class="text-blue">Galeria de Imagens</h2>
 
-        <!-- linha do grid -->
-        <div class="row d-flex align-items-center">
-           <div class="col-md-6 my-2">  
-                <img src="./images/cards/pexels-alex-knight-2599244.jpg" 
-                alt="Imagem do Robo A" class="img-fluid rounded">
-
-           </div>
-           <div class="col-md-6 my-2">
-                <div class="row">
-                    <div class="col-6 my-2">
-                        <img src="./images/cards/pexels-kindel-media-8566473.jpg" 
-                            alt="Imagem Robo B" class="img-fluid rounded" >
-                    </div>
-                    <div class="col-6 my-2">
-                        <img src="./images/cards/pexels-mason-mccall-12733045.jpg" 
-                            alt="Imagem Robo B" class="img-fluid rounded" >
-                    </div>
-                    <div class="col-6 my-2">
-                        <img src="./images/cards/pexels-pavel-danilyuk-8294554.jpg" 
-                            alt="Imagem Robo B" class="img-fluid rounded" >
-                    </div>
-                    <div class="col-6 my-2">
-                        <img src="./images/cards/pexels-alex-knight-2599244.jpg" 
-                            alt="Imagem Robo B" class="img-fluid rounded" >
-                    </div>
-                </div>
-           </div>
+      <!-- linha do grid -->
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6 my-2">
+          <img
+            src="./images/cards/pexels-alex-knight-2599244.jpg"
+            alt="Imagem do Robô CTUO"
+            class="img-fluid rounded"
+          />
         </div>
+        <div class="col-md-6 my-2">
+          <div class="row">
+            <div class="col-6 my-2">
+              <img
+                src="./images/cards/pexels-alex-knight-2599244.jpg"
+                alt="Imagem do Robô XSXS"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-6 my-2">
+              <img
+                src="./images/cards/pexels-lj-2085831.jpg"
+                alt="Imagem do Robô XSXS"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-6 my-2">
+              <img
+                src="./images/cards/pexels-lj-2085832.jpg"
+                alt="Imagem do Robô XSXS"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-6 my-2">
+              <img
+                src="./images/cards/pexels-pavel-danilyuk-8294625.jpg"
+                alt="Imagem do Robô XSXS"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- formulário -->
+    <section class="container my-4">
+      <form id="conta" name="conta" method="get" action="">
+        <div class="row">
+          <div class="col-md-4 my-2">
+            <label for="nome" class="form-label">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              class="form-control"
+              placeholder="Ex: Fulano de Tal"
+              minlength="10"
+              maxlength="150"
+              required
+            />
+          </div>
+
+          <div class="col-md-4 my-2">
+            <label for="senha" class="form-label">Senha</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              class="form-control"
+              placeholder="Ex:!@#$123456"
+              minlength="6"
+              maxlength="15"
+              required
+            />
+          </div>
+
+          <div class="col-md-4 my-2">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="col-md-4 my-2">
+            <label for="data" class="form-label">Data do Cadastro</label>
+            <input
+              type="date"
+              id="data"
+              name="data"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="col-md-4 my-2">
+            <label for="formacao" class="form-label">Formação</label>
+            <select name="formacao" id="formacao" class="form-select">
+              <option value="0" disabled selected>Selecione sua opção</option>
+              <option value="1">Ensino Médio</option>
+              <option value="2">Ensino Superior</option>
+              <option value="3">Pós Graduação</option>
+              <option value="4">Mestrado</option>
+            </select>
+          </div>
+
+          <div class="col-md-4 my-2">
+            <p>Tipo de Conta</p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineRadio1">Free</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineRadio2">Plus</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio3"
+                value="option3"
+              />
+              <label class="form-check-label" for="inlineRadio3">Premium</label>
+            </div>
+          </div>
+          <div class="col my-2">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" class="form-control"
+            placeholder="Ex: Sua mensagem..."></textarea>
+          </div>
+
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-primary my-3">Criar Conta</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="container my-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col my-3">
+                <video src="./videos/pencil_-_8256 (720p).mp4" controls loop class="ratio ratio-16x9"></video>
+            </div>
+            <div class="col my-3">
+                <video src="./videos/pencil_-_8256 (720p).mp4" controls loop class="ratio ratio-16x9"></video>
+            </div>
+            <div class="col my-3">
+                <video src="./videos/pencil_-_8256 (720p).mp4" controls loop class="ratio ratio-16x9"></video>
+            </div>
+            <div class="col my-3">
+                <video src="./videos/pencil_-_8256 (720p).mp4" controls loop class="ratio ratio-16x9"></video>
+            </div>
+            <div class="col my-3">
+                <video src="./videos/pencil_-_8256 (720p).mp4" controls loop class="ratio ratio-16x9"></video>
+            </div>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/qJ4hEXG-jvw?si=VPgwmS19CWiw_XVi" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            
+        </div>
 
 
-    <!-- Chamada do JS do BS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-    </script>
-</body>
+    </section> 
 
+    <!-- Chamada do JS do BS --> 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
