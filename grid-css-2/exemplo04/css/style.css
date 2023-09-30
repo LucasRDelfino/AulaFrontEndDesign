@@ -1,0 +1,61 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2.5rem;
+    font-family: calibri;
+}
+
+.container {
+    background-color: #333;
+    margin: 20px auto;
+    width: 90%;
+    display : grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: 20vh 30vh 40vh 10vh;
+    grid-template-areas: 
+    "box1  box1  box1"
+    "box2  box2  box3"
+    "box4  box5  box5"
+    "box6  box6  box6";
+}
+
+
+.box1 {
+    grid-area : box1;
+    background-color: cornflowerblue;
+}
+.box2 {
+    grid-area : box2;
+    background-color: cadetblue;
+}
+
+.box3 {
+    grid-area : box3;
+    background-color: darkblue;
+}
+
+.box4 {
+    grid-area : box4;
+    background-color: aqua;
+}
+
+.box5 {
+    grid-area : box5;
+    background-color: aquamarine;
+}
+
+.box6 {
+    grid-area : box6;
+    background-color: black
+}
+
+
